@@ -339,6 +339,8 @@ ELASTICSEARCH/KIBANA</td>
 
 <p style="text-align:left">On "Boards" screen keep only To Do/In Progress/Done/Closed stages</p>
 
+<p style="text-align:left">ASK FOR STAFF TO COPY ISSUES ON YOUR FORKED PROJECT</p>
+
 <p style="text-align:left"> </p>
 
 <p style="text-align:left">Each issue can be</p>
@@ -855,7 +857,7 @@ public final class Messages {
 
 <p style="text-align:left"> </p>
 
-<p style="text-align:left">A server like <a href="http://nginx.org/" target="_blank">nginx </a>is required to display pages (copy node-client in html folder) </p>
+<p style="text-align:left">A server like <a href="http://nginx.org/" target="_blank">nginx </a>is required to display pages (copy the content of  node-client directly in <em>html </em>folder) </p>
 
 <p style="text-align:left"> </p>
 
@@ -1058,7 +1060,7 @@ public final class Messages {
 <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 893px; height: 63px; left: 27px; top: 490px;" data-block-id="2bba6fe56dc4ee3660f529276338903d"><div class="sl-block-content" style="z-index: 17;"><pre><code>docker stop &lt;new_container_id&gt; ; docker start &lt;old_container_id&gt;</code></pre></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="3087cdefc6e87505bec64a21da7e94e5"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #5 : Details 4/10</span></h1>
 </div></div>
-<div class="sl-block" style="left: 0px; top: 96px; width: 960px; height: auto;" data-block-type="text" data-block-id="a54766a110d717554648f75f01e4262e"><div class="sl-block-content" style="z-index: 12; color: rgb(255, 255, 255);" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
+<div class="sl-block" style="left: 0px; top: 97px; width: 960px; height: auto;" data-block-type="text" data-block-id="a54766a110d717554648f75f01e4262e"><div class="sl-block-content" style="z-index: 12; color: rgb(255, 255, 255);" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
 <p style="text-align:left"> </p>
 
 <p style="color:rgb(255, 255, 255); text-align:left">Containers persist data in the container by default, but what if we really need to keep the data ? </p>
@@ -1084,7 +1086,9 @@ public final class Messages {
 <div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="5264b11fd2524839607510c2965aa954"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 
 
-<div class="sl-block" data-block-type="code" style="width: 855px; height: 58px; left: 34px; top: 368px;" data-block-id="ff8834077970ea812724ec842f065f0b"><div class="sl-block-content" style="z-index: 14;"><pre><code>docker stop &lt;old_container_id&gt;
+<div class="sl-block" data-block-type="code" style="width: 855px; height: 91px; left: 34px; top: 368px;" data-block-id="ff8834077970ea812724ec842f065f0b"><div class="sl-block-content" style="z-index: 14;"><pre><code>docker stop &lt;old_container_id&gt;
+sudo mkdir -p /volumes/jenkins
+sudo chown 1000:1000 /volumes/jenkins
 docker run -p 8080:8080 -v /volumes/jenkins:/var/jenkins_home jenkins:1.625.3</code></pre></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="492f88d908f0a17d4d645440c8927cc9"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #5 : Details 5/10</span></h1>
 </div></div>
@@ -1111,7 +1115,9 @@ docker run -p 8080:8080 -v /volumes/jenkins:/var/jenkins_home jenkins:1.625.3</c
 <div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="00b34857dda9bc49e580c27d4ddd9c93"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 
 
-<div class="sl-block" data-block-type="code" style="width: 888px; height: 99px; left: 28px; top: 391px;" data-block-id="3904494140a45d3ae2e41cc9e54fef41"><div class="sl-block-content" style="z-index: 14;"><pre><code>docker run -p 9000:9000 -p 9092:9092 \
+<div class="sl-block" data-block-type="code" style="width: 888px; height: 135px; left: 28px; top: 367px;" data-block-id="3904494140a45d3ae2e41cc9e54fef41"><div class="sl-block-content" style="z-index: 14;"><pre><code>sudo mkdir -p /volumes/sonar/data /volumes/sonar/extensions
+sudo chown -R 1000:1000 /volumes/sonar
+docker run -p 9000:9000 -p 9092:9092 \
 -v /volumes/sonar/data:/opt/sonarqube/data \
 -v /volumes/sonar/extensions:/opt/sonarqube/extensions \
 sonarqube:5.2</code></pre></div></div>
@@ -1137,7 +1143,9 @@ sonarqube:5.2</code></pre></div></div>
 <div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="d7f83f7bf9b55a791d8f181135a6623b"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 
 
-<div class="sl-block" data-block-type="code" style="width: 888px; height: 77px; left: 20px; top: 323px;" data-block-id="54c7cc9efc4f31444cc50bd30d5ef567"><div class="sl-block-content" style="z-index: 14;"><pre><code>docker run -p 8081:8081 \
+<div class="sl-block" data-block-type="code" style="width: 888px; height: 130px; left: 20px; top: 323px;" data-block-id="54c7cc9efc4f31444cc50bd30d5ef567"><div class="sl-block-content" style="z-index: 14;"><pre><code>sudo mkdir /volumes/nexus
+sudo chown 200:200 /volumes/nexus
+docker run -p 8081:8081 \
 -v /volumes/nexus:/sonatype-work \
 sonatype/nexus:2.11.2-06</code></pre></div></div>
 <div class="sl-block" data-block-type="image" style="width: 887px; height: 159.66px; left: 21px; top: 490px;" data-block-id="fe778c871a332d80ebb06d1545845921"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="1600" data-natural-height="288" style="" data-src="deck-1/2168214-pasted-from-clipboard.png"></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="3a108f0c1d0865e1182ab7e25c0affed"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
@@ -1163,7 +1171,9 @@ sonatype/nexus:2.11.2-06</code></pre></div></div>
 <div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="be45c090dbcaa68a1fa283106b3080ed"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 
 
-<div class="sl-block" data-block-type="code" style="width: 888px; height: 77px; left: 20px; top: 337px;" data-block-id="9d09b6497b971ec614287b220c433ba4"><div class="sl-block-content" style="z-index: 14;"><pre><code>docker run -p 9200:9200 -p 9300:9300 -p 5601:5601 \
+<div class="sl-block" data-block-type="code" style="width: 888px; height: 124px; left: 20px; top: 337px;" data-block-id="9d09b6497b971ec614287b220c433ba4"><div class="sl-block-content" style="z-index: 14;"><pre><code>sudo mkdir /volumes/elk
+sudo chown 103:107 /volumes/elk
+docker run -p 9200:9200 -p 9300:9300 -p 5601:5601 \
 -v /volumes/elk:/var/lib/elasticsearch \
 sebp/elk:E1L1K4</code></pre></div></div>
 <div class="sl-block" data-block-type="image" style="width: 887px; height: 159.66px; left: 21px; top: 490px;" data-block-id="fe3cc86bbd3a5705b451b24277201daf"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="1600" data-natural-height="288" style="" data-src="deck-1/2168214-pasted-from-clipboard.png"></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="ed7f7ea8bf632db54913b069464787a5"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
@@ -1215,7 +1225,7 @@ sebp/elk:E1L1K4</code></pre></div></div>
 
 
 <div class="sl-block" data-block-type="code" data-block-id="3ebb2312d96d0f339159d3500a6f6ce4" style="min-width: 30px; min-height: 30px; width: 917px; height: 507px; left: 22px; top: 186px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>jenkins:
-image : "jenkins:1.625.3"
+  image : "jenkins:1.625.3"
   ports:
    - "8080:8080"
   volumes:
@@ -1607,7 +1617,7 @@ elk:
 
 
 
-<div class="sl-block" data-block-type="code" data-block-id="4fa583009338795e327415647b1d33af" style="min-width: 30px; min-height: 30px; width: 926px; height: 456px; left: 14px; top: 199px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>FROM jenkins:1.625.3
+<div class="sl-block" data-block-type="code" data-block-id="4fa583009338795e327415647b1d33af" style="min-width: 30px; min-height: 30px; width: 927px; height: 511px; left: 17px; top: 192px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>FROM jenkins:1.625.3
 
 # NEED TO BE ROOT FOR APT INSTALLS
 USER root
@@ -1623,15 +1633,14 @@ RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 581
 # INSTALL AND ACTIVATE DOCKER
 RUN apt-get install -y docker-engine &amp;&amp; \
     adduser jenkins sudo &amp;&amp; \
-    echo "jenkins ALL=NOPASSWD:ALL" | (EDITOR="tee -a" visudo) &amp;&amp; \
-    usermod -aG docker jenkins
-
-# GET BACK TO STANDARD USER
-USER jenkins
+    echo "jenkins ALL=NOPASSWD:ALL" | (EDITOR="tee -a" visudo) &amp;&amp; usermod -aG docker jenkins
 
 # GATLING INSTALL "A LA MANO"
- wget https://oss.sonatype.org/content/repositories/releases/io/gatling/highcharts/gatling-charts-highcharts-bundle/2.1.7/gatling-charts-highcharts-bundle-2.1.7-bundle.zip &amp;&amp; \
-  unzip gatling-charts-highcharts-bundle-2.1.7-bundle.zip</code></pre></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="2e05b014872d0cc814f8b74da652db1b"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
+RUN wget https://oss.sonatype.org/content/repositories/releases/io/gatling/highcharts/gatling-charts-highcharts-bundle/2.1.7/gatling-charts-highcharts-bundle-2.1.7-bundle.zip &amp;&amp; \
+  unzip gatling-charts-highcharts-bundle-2.1.7-bundle.zip
+
+# GET BACK TO STANDARD USER
+USER jenkins</code></pre></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="2e05b014872d0cc814f8b74da652db1b"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #6 : Details 8/12</span></h1>
 </div></div>
 <div class="sl-block" style="left: 0px; top: 97px; width: 960px; height: auto;" data-block-type="text" data-block-id="4118334c610eb03f4eeb48ca0e943aa5"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
@@ -1675,7 +1684,7 @@ USER jenkins
 
 <p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="68dcc2ab839a8a2dfebc3081de808c9e"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="68dcc2ab839a8a2dfebc3081de808c9e"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 
 
 
@@ -1707,7 +1716,7 @@ USER jenkins
 
 <p style="text-align:left">instead of restarting old one</p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="70df2af625841705dbba90909d74ed74"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="70df2af625841705dbba90909d74ed74"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 
 
 
@@ -1745,7 +1754,7 @@ USER jenkins
 
 <p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="aa4ab8a3506e47e17bf2f9781ba5250e"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="aa4ab8a3506e47e17bf2f9781ba5250e"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 
 
 
@@ -1773,7 +1782,7 @@ USER jenkins
 
 <p style="text-align:left">Once again, Jenkins accesses smoothly to ELK container using its name, allowing jobs status reporting in elasticsearch database</p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="85c3fb852574f9fc32f8f7d20f9d7d2a"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="85c3fb852574f9fc32f8f7d20f9d7d2a"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 
 
 
@@ -1803,7 +1812,7 @@ USER jenkins
 
 <p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="c6ca920c7b48686d42990fbd0781272b"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="c6ca920c7b48686d42990fbd0781272b"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 
 
 
@@ -1835,7 +1844,7 @@ USER jenkins
 
 <p style="color:rgb(255, 255, 255); text-align:left">- Sends status and reports to ELK and Stash</p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="0c08eaad96e39f9961746b755a63107f"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="0a2a64e2f7cedb8db733ea0da8d2201f"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="0c08eaad96e39f9961746b755a63107f"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="0a2a64e2f7cedb8db733ea0da8d2201f"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #7 : Tooltips</span></h1>
 </div></div>
 <div class="sl-block" style="left: 0px; top: 96px; width: 960px; height: auto;" data-block-type="text" data-block-id="12e8bba27f539afb7da6b9cab2bdf07f"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
@@ -1863,7 +1872,7 @@ USER jenkins
 
 <p style="text-align:left">- The tag in github needs configuration to work</p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="41a2e7a70f9fd09a72bf977fa16f479f"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="6e0088217fe64c9c70335f6147eb062d"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="41a2e7a70f9fd09a72bf977fa16f479f"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="6e0088217fe64c9c70335f6147eb062d"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #7 : Details 1/5</span></h1>
 </div></div>
 <div class="sl-block" style="left: 0px; top: 96px; width: 960px; height: auto;" data-block-type="text" data-block-id="2151244243f04079c8193be83adaf735"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
@@ -1893,7 +1902,7 @@ USER jenkins
 
 <p style="text-align:left">name/email for Github checks </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="0f84ae6f6ae0b7117113f641e64c3e12"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="0f84ae6f6ae0b7117113f641e64c3e12"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="4b268374fb367cbabede9f7e619b60ca" style="min-width: 30px; min-height: 30px; width: 304.881px; height: 183px; left: 527px; top: 119px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="853" data-natural-height="512" style="" data-src="deck-1/2170443-pasted-from-clipboard.png"></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="6c8a93cf874ceab0a1cdfaebe023083a" style="min-width: 30px; min-height: 30px; width: 193px; height: 100.821px; left: 640px; top: 319.179px;"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="469" data-natural-height="245" style="" data-src="deck-1/2170450-pasted-from-clipboard.png"></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="6c71cd44c4505fe5d97eb0b3aca949bc" style="min-width: 30px; min-height: 30px; width: 444.615px; height: 257px; left: 505.385px; top: 429px;"><div class="sl-block-content" style="z-index: 16;"><img style="" data-natural-width="974" data-natural-height="563" data-src="deck-1/2170472-pasted-from-clipboard.png"></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="273d7d560f35978f9f12b0b62d52572d"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
@@ -1904,7 +1913,7 @@ USER jenkins
 
 <p style="text-align:left">- HTTP connexion to <span style="color:rgb(255, 255, 255); text-align:left">Nexus </span>defaults with</p>
 
-<p style="text-align:left">admin:admin123, however to hide this </p>
+<p style="text-align:left">"admin:admin123", however to hide this </p>
 
 <p style="text-align:left">info from logs/UI, we inject and mask it </p>
 
@@ -1920,15 +1929,15 @@ USER jenkins
 
 <p style="text-align:left">- Using  a shell step, here is a cheap way to inject versions in the application: </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="dd483634ccc6252af797f5345a491499"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="dd483634ccc6252af797f5345a491499"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="d93a8befa93911059fea124dc02eab3e" style="min-width: 30px; min-height: 30px; width: 386.288px; height: 140px; left: 560px; top: 140px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="825" data-natural-height="299" data-src="deck-1/2170488-pasted-from-clipboard.png"></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="3108e9bc187b8178937273f104f40738" style="min-width: 30px; min-height: 30px; width: 382.408px; height: 54px; left: 564px; top: 323px;"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="347" data-natural-height="49" style="" data-src="deck-1/2170494-pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="3108e9bc187b8178937273f104f40738" style="min-width: 30px; min-height: 30px; width: 382.408px; height: 54px; left: 564px; top: 377px;"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="347" data-natural-height="49" style="" data-src="deck-1/2170494-pasted-from-clipboard.png"></div></div>
 <div class="sl-block" data-block-type="code" data-block-id="e80605afa57a673de66309307ea6f599" style="min-width: 30px; min-height: 30px; width: 866px; height: 62px; left: 34px; top: 606px;"><div class="sl-block-content" style="z-index: 16;"><pre><code>sed -i "s|&lt;title&gt;&lt;/title&gt;|&lt;title&gt;ATM-${PIPELINE_VERSION}&lt;/title&gt;|g" node-client/index.html  
 sed -i "s|BLUEBANK ATM|BLUEBANK ATM v${PIPELINE_VERSION}|g" node-client/index.html</code></pre></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="530e786618c00727bea2135a848ad273" style="min-width: 30px; min-height: 30px; width: 434.881px; height: 52px; left: 511px; top: 400px;"><div class="sl-block-content" style="z-index: 17;"><img style="" data-natural-width="1405" data-natural-height="168" data-src="deck-1/2174183-pasted-from-clipboard.png"></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="d6c5de1ec289c54d82aa9e367da32ada"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
+<div class="sl-block" data-block-type="image" data-block-id="530e786618c00727bea2135a848ad273" style="min-width: 30px; min-height: 30px; width: 434.881px; height: 52px; left: 511px; top: 453px;"><div class="sl-block-content" style="z-index: 17;"><img style="" data-natural-width="1405" data-natural-height="168" data-src="deck-1/2174183-pasted-from-clipboard.png"></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="d6c5de1ec289c54d82aa9e367da32ada"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #7 : Details 3/5</span></h1>
 </div></div>
-<div class="sl-block" style="left: 0px; top: 96px; width: 960px; height: auto;" data-block-type="text" data-block-id="b02f7d3c1ecbaee3d362f9806bb6274e"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
+<div class="sl-block" style="left: 0px; top: 97px; width: 960px; height: auto;" data-block-type="text" data-block-id="b02f7d3c1ecbaee3d362f9806bb6274e"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
 <p style="text-align:left"> </p>
 
 <p style="text-align:left">- The build is quite similar to the workstation one, except the deployment part using the password obfuscation </p>
@@ -1946,15 +1955,22 @@ sed -i "s|BLUEBANK ATM|BLUEBANK ATM v${PIPELINE_VERSION}|g" node-client/index.ht
 <p style="text-align:left">is pretty self-explanatory</p>
 
 <p style="text-align:left"> </p>
+
+<p style="text-align:left"> </p>
+
+<p style="text-align:left">- Add sonarqube invocation</p>
+
+<p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="29dc28b3ebea7163a3bb5b8157730e53"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="29dc28b3ebea7163a3bb5b8157730e53"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 <div class="sl-block" data-block-type="code" data-block-id="f70900878a0c6d635c10c291af6cb36e" style="min-width: 30px; min-height: 30px; width: 1125px; height: 136px; left: -77px; top: 236px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>clean
 package 
 assembly:single
 deploy
 -Pall-tests jacoco:report org.pitest:pitest-maven:mutationCoverage
 -DaltDeploymentRepository=releases::default::http://${NEXUS_CONNEXION}@traineegrp-nexus:8081/content/repositories/releases</code></pre></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="532c4ce27a76df458b9ece3ced5c6662" style="min-width: 30px; min-height: 30px; width: 537.05px; height: 289px; left: 415.95px; top: 402px;"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="1600" data-natural-height="861" data-src="deck-1/2170536-pasted-from-clipboard.png"></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -2px; width: 720px; height: auto;" data-block-type="text" data-block-id="c4fa2387c39a8d29053e0908d6cca240"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
+<div class="sl-block" data-block-type="image" data-block-id="532c4ce27a76df458b9ece3ced5c6662" style="min-width: 30px; min-height: 30px; width: 362.369px; height: 195px; left: 580.631px; top: 381px;"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="1600" data-natural-height="861" data-src="deck-1/2170536-pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="2d1be91d3682921090fc503fc9f2cd0f" style="min-width: 30px; min-height: 30px; width: 360px; height: 68.175px; left: 583px; top: 606px;"><div class="sl-block-content" style="z-index: 16;"><img style="" data-natural-width="1600" data-natural-height="303" data-src="deck-1/2328954-pasted-from-clipboard.png"></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -2px; width: 720px; height: auto;" data-block-type="text" data-block-id="c4fa2387c39a8d29053e0908d6cca240"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #7 : Details 4/5</span></h1>
 </div></div>
 <div class="sl-block" style="left: 0px; top: 96px; width: 960px; height: auto;" data-block-type="text" data-block-id="53a39098331233986304a3582ba17c8c"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
@@ -1970,13 +1986,13 @@ deploy
 
 <p style="text-align:left">- <span style="color:rgb(255, 255, 255); text-align:left">Nexus URL (http://&lt;your_VM&gt;:8081/content/repositories/releases)</span></p>
 
-<p style="text-align:left">should contain the binaries produces </p>
+<p style="text-align:left">should contain the binaries produced </p>
 
 <p style="text-align:left"> </p>
 
 <p style="text-align:left">- When executed, the build/tests must all pass as seen in the reports (for Jgiven, get the zip and open it extracted outside Jenkins)</p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="31440e6d1a42c8b2a3625c43fdf7ad3a"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="31440e6d1a42c8b2a3625c43fdf7ad3a"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="24c036b7f3a448ee532cbde308b8c0ef" style="min-width: 30px; min-height: 30px; width: 429.105px; height: 180px; left: 498px; top: 120px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="1571" data-natural-height="659" data-src="deck-1/2170680-pasted-from-clipboard.png"></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="285ebd52846a9f7abaf50f40b962a4f5" style="min-width: 30px; min-height: 30px; width: 466px; height: 101.355px; left: 7px; top: 570px;"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="1600" data-natural-height="348" style="" data-src="deck-1/2170697-pasted-from-clipboard.png"></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="cebc8561c3c333c773197aeb785354a0" style="min-width: 30px; min-height: 30px; width: 381.308px; height: 102px; left: 530px; top: 570px;"><div class="sl-block-content" style="z-index: 16;"><img style="" data-natural-width="1600" data-natural-height="428" data-src="deck-1/2170710-pasted-from-clipboard.png"></div></div>
@@ -1992,7 +2008,7 @@ deploy
 
 <p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="da35b9d965882e9eaa21df974c8a01b4"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="da35b9d965882e9eaa21df974c8a01b4"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="bc4f178b9ed1c12252c2586ee91834a5" style="min-width: 30px; min-height: 30px; width: 764.977px; height: 415px; left: 97px; top: 274px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="1600" data-natural-height="868" data-src="deck-1/2170747-pasted-from-clipboard.png"></div></div></section></section><section class="stack"><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="26f187e1cd806a35d6adb46144a5bf14"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #8 : Create PACKAGE job</span></h1>
 </div></div>
@@ -2021,7 +2037,7 @@ deploy
 
 <p style="text-align:left"><span style="color:rgb(255, 255, 255); text-align:left">- Sends status and reports to ELK</span><span style="color:rgb(255, 255, 255); text-align:left"> and Slack</span></p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="e62019ef154761684ca17c047a68a0a7"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="a6cdb2779394f36970141d143bbd0acd"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="e62019ef154761684ca17c047a68a0a7"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="a6cdb2779394f36970141d143bbd0acd"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #8 : Tooltips</span></h1>
 </div></div>
 <div class="sl-block" style="left: 0px; top: 97px; width: 960px; height: auto;" data-block-type="text" data-block-id="e424e70f5b10d5be687b64d2f3123c7d"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
@@ -2147,7 +2163,7 @@ deploy
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
-<p style="color:rgb(255, 255, 255); text-align:left">On the Github repository, add a Dockerfile containing these entries (scroll!) :</p>
+<p style="color:rgb(255, 255, 255); text-align:left">On the Github repository, add a "Dockerfile" file on the root directory containing these entries (scroll!) :</p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 </div></div>
@@ -2234,21 +2250,21 @@ ENTRYPOINT [ "/tmp/atm-startup.sh" ]</code></pre></div></div></section><section 
 
 <p style="text-align:left"> </p>
 
-<p style="text-align:left"> </p>
-
-<p style="text-align:left"> </p>
-
 <p style="text-align:left">This script find and runs the auto-executable jar and nginx </p>
 
-<p style="text-align:left"> - UI should be available on http 80 port</p>
+<p style="text-align:left"> -&gt; UI should be available on http 80 port</p>
 
-<p style="text-align:left"> - server should be available on websocket 8081 port</p>
+<p style="text-align:left"> -&gt; Server should be available on websocket 8081 port</p>
+
+<p style="text-align:left"> </p>
+
+<p style="text-align:left"><span style="color:rgb(255, 255, 255); text-align:left">- Commit and push these files in the github project</span></p>
 
 <p style="text-align:left"> </p>
 
 <p style="text-align:left">Now we have to build and run it for real...</p>
 </div></div>
-<div class="sl-block" data-block-type="code" data-block-id="cf5b80e9590f75f87f364c68db83442b" style="min-width: 30px; min-height: 30px; width: 898px; height: 300px; left: 31px; top: 120px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>#! /bin/bash
+<div class="sl-block" data-block-type="code" data-block-id="cf5b80e9590f75f87f364c68db83442b" style="min-width: 30px; min-height: 30px; width: 898px; height: 249px; left: 31px; top: 120px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>#! /bin/bash
 
 # ATM run server
 cd /tmp/ATM-SERVER/lib
@@ -2322,7 +2338,7 @@ java -jar ${runningJar} org.bluebank.Application</code></pre></div></div></secti
 
 <p style="color:rgb(255, 255, 255); text-align:left"><span style="color:rgb(255, 255, 255); text-align:left">- Sends status and reports to ELK</span><span style="color:rgb(255, 255, 255); text-align:left"> and Slack</span></p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="92226b7d2704d0d2e60c90cfb94511c7"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="66bb098f06aa2f465af49feb61ad0aa4"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="92226b7d2704d0d2e60c90cfb94511c7"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="66bb098f06aa2f465af49feb61ad0aa4"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #9 : Tooltips</span></h1>
 </div></div>
 <div class="sl-block" style="left: 10px; top: 97px; width: 960px; height: auto;" data-block-type="text" data-block-id="bace0ed2f66a41ac463f06b3dc4ebfbc"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
@@ -2336,7 +2352,7 @@ java -jar ${runningJar} org.bluebank.Application</code></pre></div></div></secti
 
 <p style="text-align:left">=&gt; publication requires manual approval process</p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="85c492f447d291439a2d348049e79bbd"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="3e8d20d2fdf5ed2a1f20ea10d2b08cf2"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="85c492f447d291439a2d348049e79bbd"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="3e8d20d2fdf5ed2a1f20ea10d2b08cf2"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #9 : Details 1/2</span></h1>
 </div></div>
 <div class="sl-block" style="left: 10px; top: 97px; width: 960px; height: auto;" data-block-type="text" data-block-id="d1a204846cdd8b5c1a4f5db3ffa6a04d"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
@@ -2366,7 +2382,7 @@ java -jar ${runningJar} org.bluebank.Application</code></pre></div></div></secti
 
 <p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="37c90cafe9ea39538d091e4a8e25b1e8"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="37c90cafe9ea39538d091e4a8e25b1e8"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 <div class="sl-block" data-block-type="image" style="width: 303.621px; height: 166px; left: 307px; top: 378px;" data-block-id="4813dce89d1df39a1e12347a68cbf103"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="995" data-natural-height="544" style="" data-src="deck-1/2172365-pasted-from-clipboard.png"></div></div>
 <div class="sl-block" data-block-type="code" style="width: 650px; height: 58px; left: 114px; top: 611px;" data-block-id="a9bfee8e4337364d74f831178b48e801"><div class="sl-block-content" style="z-index: 15;"><pre><code>sudo docker stop ${LOGIN_DOCKER}-atm-${PIPELINE_VERSION} || true
 sudo docker rm   ${LOGIN_DOCKER}-atm-${PIPELINE_VERSION} || true</code></pre></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="7c90479b0480a86d3e101760dda2f6bf"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1">
@@ -2397,7 +2413,7 @@ sudo docker rm   ${LOGIN_DOCKER}-atm-${PIPELINE_VERSION} || true</code></pre></d
 
 <p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="b8d91aec8dc71bead09d719dbe9e40c1"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="b8d91aec8dc71bead09d719dbe9e40c1"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 <div class="sl-block" data-block-type="code" data-block-id="d2bb1cfee6aae89332057fa83458d02e" style="min-width: 30px; min-height: 30px; width: 902px; height: 70px; left: 29px; top: 264px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>sudo docker tag -f ${LOGIN_DOCKER}/atm:${PIPELINE_VERSION} ${LOGIN_DOCKER}/atm:latest
 sudo docker login --username=${LOGIN_DOCKER} --password=${PASSWORD_DOCKER} --email=${EMAIL_DOCKER}
 sudo docker push ${LOGIN_DOCKER}/atm</code></pre></div></div>
@@ -2416,11 +2432,11 @@ sudo docker push ${LOGIN_DOCKER}/atm</code></pre></div></div>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
-<p style="color:rgb(255, 255, 255); text-align:left">- Adds a tag on the latest image with the "tutum.co" namespace prefix</p>
+<p style="color:rgb(255, 255, 255); text-align:left">- Adds a new project/tag label on the latest image </p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
-<p style="color:rgb(255, 255, 255); text-align:left">- Logs on the "tutum.co" registry and pushed to ATM latest image</p>
+<p style="color:rgb(255, 255, 255); text-align:left">- Pushed this image to a docker cloud private repository</p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
@@ -2432,48 +2448,48 @@ sudo docker push ${LOGIN_DOCKER}/atm</code></pre></div></div>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="a04708f153e0efef4cbc59deb9fe1a01"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="50d806113af9959b4929987996b7ea25"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="a04708f153e0efef4cbc59deb9fe1a01"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="50d806113af9959b4929987996b7ea25"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #10 : Tooltips</span></h1>
 </div></div>
 <div class="sl-block" style="left: -1px; top: 97px; width: 960px; height: auto;" data-block-type="text" data-block-id="a08891c531a76839e0a9d5593e82adb5"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
-<p style="text-align: left;"> </p>
+<p style="text-align:left"> </p>
 
-<p style="text-align: left;">Tutum is a container deployment and runtime service </p>
+<p style="text-align:left">Docker Cloud is a container deployment and runtime service </p>
 
-<p style="text-align: left;"> </p>
+<p style="text-align:left"> </p>
 
-<p style="text-align: left;">- Acquired by Docker inc. in 2015</p>
+<p style="text-align:left">- Formerly known as Tutum, acquired by Docker inc. in 2015</p>
 
-<p style="text-align: left;"> </p>
+<p style="text-align:left"> </p>
 
-<p style="text-align: left;">- Provides its own private registry</p>
+<p style="text-align:left">- Provides its own private registry</p>
 
-<p style="text-align: left;"> </p>
+<p style="text-align:left"> </p>
 
-<p style="text-align: left;">- Can address multiple clouds (AWS, Azure) including private<br>
+<p style="text-align:left">- Can address multiple clouds (AWS, Azure) including private<br>
 ones ("Bring Your Own Cloud" feature) </p>
 
-<p style="text-align: left;"> </p>
+<p style="text-align:left"> </p>
 
-<p style="text-align: left;">- Provides many cool features to manage a docker-based infrastructure : scalability on the fly, auto-redeployments ...</p>
+<p style="text-align:left">- Provides many cool features to manage a docker-based infrastructure : scalability on the fly, auto-redeployments ...</p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="bc38799f2726b6f5ff65249bcb15b63b"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="dc5535544476cf1f6cff6c75945184ea"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="bc38799f2726b6f5ff65249bcb15b63b"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="dc5535544476cf1f6cff6c75945184ea"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #10 : Details 1/5</span></h1>
 </div></div>
-<div class="sl-block" style="left: 0px; top: 95px; width: 960px; height: auto;" data-block-type="text" data-block-id="06d42c50515d8e2f7fd1d3fccb2b8dc2"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
+<div class="sl-block" style="left: 0px; top: 97px; width: 960px; height: auto;" data-block-type="text" data-block-id="06d42c50515d8e2f7fd1d3fccb2b8dc2"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
 <p style="color:rgb(255, 255, 255); text-align:left">  </p>
 
-<p style="color:rgb(255, 255, 255); text-align:left">- Create an account on <a href="https://www.tutum.co/" target="_blank">https://www.tutum.co/</a> with your Docker IDs</p>
+<p style="color:rgb(255, 255, 255); text-align:left">- Create an account on <a href="https://cloud.docker.com" target="_blank">https://cloud.docker.com</a> with your Docker IDs</p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
-<p style="color:rgb(255, 255, 255); text-align:left">- On the "Bring your own node" tab, declare your "run" virtual machine </p>
+<p style="color:rgb(255, 255, 255); text-align:left">- On the "Bring your own node" tab,</p>
+
+<p style="color:rgb(255, 255, 255); text-align:left">declare your "run" virtual machine </p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"><span> </span> </p>
-
-<p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
@@ -2489,10 +2505,11 @@ ones ("Bring Your Own Cloud" feature) </p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="7813e821c6803cb395d12ef5bb1bd493"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="6dd08081adfc480ed74b1591779bf7dd" style="min-width: 30px; min-height: 30px; width: 651.852px; height: 110px; left: 155px; top: 295px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="1600" data-natural-height="270" style="" data-src="deck-1/2172610-pasted-from-clipboard.png"></div></div>
-<div class="sl-block" data-block-type="code" data-block-id="705fd353694182e749e771ffdc9a0062" style="min-width: 30px; min-height: 30px; width: 816px; height: 40px; left: 80px; top: 520px;"><div class="sl-block-content" style="z-index: 15;"><pre><code>sudo curl -Ls https://get.tutum.co/ | sudo -H sh -s ******************************</code></pre></div></div>
-<div class="sl-block" data-block-type="code" data-block-id="458db8c0e8cdc4fbb01fb736ef205720" style="min-width: 30px; min-height: 30px; width: 470px; height: 34px; left: 206px; top: 645px;"><div class="sl-block-content" style="z-index: 16;"><pre><code>apt-get remove tutum-agent &amp;&amp; rm -rf /etc/tutum</code></pre></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="61230b892305890456eb2252262d3e30"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="7813e821c6803cb395d12ef5bb1bd493"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+
+<div class="sl-block" data-block-type="code" data-block-id="705fd353694182e749e771ffdc9a0062" style="min-width: 30px; min-height: 30px; width: 816px; height: 40px; left: 80px; top: 520px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>curl -Ls https://get.cloud.docker.com/ | sudo -H sh -s ******************************</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-block-id="458db8c0e8cdc4fbb01fb736ef205720" style="min-width: 30px; min-height: 30px; width: 633px; height: 44px; left: 164px; top: 649px;"><div class="sl-block-content" style="z-index: 15;"><pre><code>apt-get remove dockercloud-agent &amp;&amp; rm -rf /etc/dockercloud-agent</code></pre></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="399bc07de7e1ad3a49e1f9d1ab8411f6" style="min-width: 30px; min-height: 30px; width: 372.658px; height: 184px; left: 560px; top: 188px;"><div class="sl-block-content" style="z-index: 16;"><img style="" data-natural-width="1600" data-natural-height="790" data-src="deck-1/2329020-pasted-from-clipboard.png"></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="61230b892305890456eb2252262d3e30"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #10 : Details 2/5</span></h1>
 </div></div>
 <div class="sl-block" style="left: 0px; top: 95px; width: 960px; height: auto;" data-block-type="text" data-block-id="359aa3f91cd1af5f4b3551d380dbe22a"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
@@ -2502,7 +2519,7 @@ ones ("Bring Your Own Cloud" feature) </p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
-<p style="color:rgb(255, 255, 255); text-align:left">- Create a repository called <span> &lt;your_LOGIN&gt;/atm : it will host the ATM images</span></p>
+<p style="color:rgb(255, 255, 255); text-align:left">- Create a private repository called <span> &lt;your_LOGIN&gt;/atmcloud: it will host the ATM images with autodeploy features</span></p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
@@ -2512,7 +2529,7 @@ ones ("Bring Your Own Cloud" feature) </p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
-<p style="color:rgb(255, 255, 255); text-align:left">- Define the connexion parameters for Tutum (same as Docker)</p>
+<p style="color:rgb(255, 255, 255); text-align:left">- Define the connexion parameters for Docker Cloud (same as Docker)</p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
@@ -2522,17 +2539,17 @@ ones ("Bring Your Own Cloud" feature) </p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="e1f73cba383d7076a84cba8449f0caff"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="780e2c6e05cf5346dd81583d0864efcc" style="min-width: 30px; min-height: 30px; width: 607px; height: 102.431px; left: 240px; top: 299px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="1600" data-natural-height="270" data-src="deck-1/2172641-pasted-from-clipboard.png"></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="e1f73cba383d7076a84cba8449f0caff"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="780e2c6e05cf5346dd81583d0864efcc" style="min-width: 30px; min-height: 30px; width: 487px; height: 82.1813px; left: 237px; top: 319px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="1600" data-natural-height="270" data-src="deck-1/2172641-pasted-from-clipboard.png"></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="da0ce4dce8d8dc048d2846c7109783c8" style="min-width: 30px; min-height: 30px; width: 378.96px; height: 114px; left: 291px; top: 560px;"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="1579" data-natural-height="475" style="" data-src="deck-1/2172657-pasted-from-clipboard.png"></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="8e38891dea06bf4f2fe5ae44652a77f9"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #10 : Details 3/5</span></h1>
 </div></div>
-<div class="sl-block" style="left: 0px; top: 95px; width: 960px; height: auto;" data-block-type="text" data-block-id="5efa63cd8bc1cf4ade64143d8f8e731f"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
+<div class="sl-block" style="left: 0px; top: 97px; width: 960px; height: auto;" data-block-type="text" data-block-id="5efa63cd8bc1cf4ade64143d8f8e731f"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
-<p style="color:rgb(255, 255, 255); text-align:left">- Create a shell step used to tag the latest image with tutum.co prefix, </p>
+<p style="color:rgb(255, 255, 255); text-align:left">- Create a shell step used to tag the latest image with atmcloud name, </p>
 
-<p style="color:rgb(255, 255, 255); text-align:left">log on tutum.co private registry and push the image</p>
+<p style="color:rgb(255, 255, 255); text-align:left">log on docker cloud private registry and push the image</p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
@@ -2550,19 +2567,21 @@ ones ("Bring Your Own Cloud" feature) </p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
+<p style="color:rgb(255, 255, 255); text-align:left"> </p>
+
 <p style="color:rgb(255, 255, 255); text-align:left">- We will now try to deploy manually this image ...</p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="af52e1092171857916e9293851286c93"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="code" data-block-id="6f8e0cd33b198d6769f454fa4349205d" style="min-width: 30px; min-height: 30px; width: 987px; height: 80px; left: -13px; top: 240px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>sudo docker tag -f ${LOGIN_DOCKER}/atm:latest tutum.co/${LOGIN_DOCKER}/atm:latest 
-sudo docker login --username=${LOGIN_DOCKER} --password=${PASSWORD_DOCKER} --email=${EMAIL_DOCKER} tutum.co
-sudo docker push tutum.co/${LOGIN_DOCKER}/atm:latest</code></pre></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="587986e6d8134d51a6afec11d03fd0ae" style="min-width: 30px; min-height: 30px; width: 592px; height: 163.17px; left: 160px; top: 420px;"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="1600" data-natural-height="441" data-src="deck-1/2172668-pasted-from-clipboard.png"></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="efe7ffa44c71cae1c6780975064c88d4"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="af52e1092171857916e9293851286c93"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="code" data-block-id="6f8e0cd33b198d6769f454fa4349205d" style="min-width: 30px; min-height: 30px; width: 987px; height: 80px; left: -13px; top: 240px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>sudo docker tag -f ${LOGIN_DOCKER}/atm:latest ${LOGIN_DOCKER}/atmcloud:latest 
+sudo docker login --username=${LOGIN_DOCKER} --password=${PASSWORD_DOCKER} --email=${EMAIL_DOCKER}
+sudo docker push ${LOGIN_DOCKER}/atmcloud:latest</code></pre></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="99d9a84f24ecee0cd390a78d198bac76" style="min-width: 30px; min-height: 30px; width: 619.444px; height: 223px; left: 91px; top: 427px;"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="1600" data-natural-height="576" data-src="deck-1/2329063-pasted-from-clipboard.png"></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="efe7ffa44c71cae1c6780975064c88d4"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #10 : Details 4/5</span></h1>
 </div></div>
 <div class="sl-block" style="left: 0px; top: 95px; width: 960px; height: auto;" data-block-type="text" data-block-id="4d6c5f4bbce09f4e8f60f96fe00b4601"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
 <p style="text-align:left"> </p>
 
-<p style="color:rgb(255, 255, 255); text-align:left">- Using the "Launch" button, try to run the container on the node with mapped 80 (dynamic)/8180 (same) ports, and autoredeploy activated</p>
+<p style="color:rgb(255, 255, 255); text-align:left">- Using the "Launch" button, try to run the container on the node with mapped 80 (32768)/8180 (8180) ports, and autoredeploy activated</p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
@@ -2584,7 +2603,7 @@ sudo docker push tutum.co/${LOGIN_DOCKER}/atm:latest</code></pre></div></div>
 
 <p style="color:rgb(255, 255, 255); text-align:left">Now, let's automate the redeployment ...</p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="182c1b5577e0bd4dcc546997c3a9189f"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="182c1b5577e0bd4dcc546997c3a9189f"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="4fa9ec768eda4e3c538dffde61828a00" style="min-width: 30px; min-height: 30px; width: 276px; height: 159.898px; left: 611px; top: 249px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="939" data-natural-height="544" data-src="deck-1/2172682-pasted-from-clipboard.png"></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="32d5ae5dabdabe4fabb31a2bc0990ea2" style="min-width: 30px; min-height: 30px; width: 488.716px; height: 157px; left: 14px; top: 443px;"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="1600" data-natural-height="514" data-src="deck-1/2172687-pasted-from-clipboard.png"></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="142efbc30e91321d8036c48448f7a686" style="min-width: 30px; min-height: 30px; width: 360px; height: 158.4px; left: 540px; top: 442px;"><div class="sl-block-content" style="z-index: 16;"><img style="" data-natural-width="1600" data-natural-height="704" data-src="deck-1/2172689-pasted-from-clipboard.png"></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -2px; width: 720px; height: auto;" data-block-type="text" data-block-id="040dd71974898b60554bd61283e15a9c"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
@@ -2607,7 +2626,7 @@ sudo docker push tutum.co/${LOGIN_DOCKER}/atm:latest</code></pre></div></div>
 
 <p style="text-align:left">ATM should be updated automatically on the "cloud" VM</p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="54107b0961e6f13d3b42b2639732f6c2"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="54107b0961e6f13d3b42b2639732f6c2"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="39e61c5c96708bef30118e223d955ecd" style="min-width: 30px; min-height: 30px; width: 783.881px; height: 119px; left: 88px; top: 221px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="1548" data-natural-height="235" style="" data-src="deck-1/2172695-pasted-from-clipboard.png"></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="71cbcc9cef97443d5291f86ccbfe79d6" style="min-width: 30px; min-height: 30px; width: 916.583px; height: 114px; left: 22px; top: 504px;"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="1600" data-natural-height="199" style="" data-src="deck-1/2172702-pasted-from-clipboard.png"></div></div></section></section><section class="stack"><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="707b993e922dc9ca173f41170d13228a"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #11 : Performance test</span></h1>
@@ -2635,7 +2654,7 @@ sudo docker push tutum.co/${LOGIN_DOCKER}/atm:latest</code></pre></div></div>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="598eb26f9e69a82311eba127f13bd982"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="d44d360779b5cb6dc834df7eecd7f147"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="598eb26f9e69a82311eba127f13bd982"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="d44d360779b5cb6dc834df7eecd7f147"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #11 : Tooltips</span></h1>
 </div></div>
 <div class="sl-block" style="left: 0px; top: 95px; width: 960px; height: auto;" data-block-type="text" data-block-id="4fa1ed8a408d531f1df278f035ea368e"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
@@ -2655,7 +2674,7 @@ sudo docker push tutum.co/${LOGIN_DOCKER}/atm:latest</code></pre></div></div>
 
 <p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="39852f8975ae870cfe0b4f85fd3ee05b"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="55effedcb4e7f62e3ebcbf82fc211c75"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="39852f8975ae870cfe0b4f85fd3ee05b"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="55effedcb4e7f62e3ebcbf82fc211c75"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #11 : Details 1/4</span></h1>
 </div></div>
 <div class="sl-block" style="left: 0px; top: 97px; width: 960px; height: auto;" data-block-type="text" data-block-id="64a1bbc210242109e68e8bc04945e8d4"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
@@ -2782,7 +2801,7 @@ sudo docker push tutum.co/${LOGIN_DOCKER}/atm:latest</code></pre></div></div>
 
 <p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="5605e0c8d7e0ad28d4819943c7e20c04"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="0739f20eb70bb5ce63a2373865b0a9f2"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="5605e0c8d7e0ad28d4819943c7e20c04"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="0739f20eb70bb5ce63a2373865b0a9f2"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #12 : Tooltips</span></h1>
 </div></div>
 <div class="sl-block" style="left: 0px; top: 96px; width: 960px; height: auto;" data-block-type="text" data-block-id="216d9c220c17ada6861af684ff76c644"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
@@ -2802,7 +2821,7 @@ sudo docker push tutum.co/${LOGIN_DOCKER}/atm:latest</code></pre></div></div>
 
 <p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="91c91f0a837f55ea7ffb9586e98e2d24"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="24885007b6c3e4a4d052c615c346a5dc"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="91c91f0a837f55ea7ffb9586e98e2d24"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="24885007b6c3e4a4d052c615c346a5dc"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #12 : Details 1/</span></h1>
 </div></div>
 <div class="sl-block" style="left: 0px; top: 96px; width: 960px; height: auto;" data-block-type="text" data-block-id="51fc84a6d67d134f88fa090002f71152"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
@@ -2991,7 +3010,7 @@ sudo docker push tutum.co/${LOGIN_DOCKER}/atm:latest</code></pre></div></div>
 
 <p style="text-align:left">  </p>
 </div></div>
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="627b6a44e3539141ed92957f76672de9"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="3dc2d442ce5f9951dfdff8f60e84eab2"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="627b6a44e3539141ed92957f76672de9"><div class="sl-block-content" style="z-index: 13;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="3dc2d442ce5f9951dfdff8f60e84eab2"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
 <h1 style="text-align:left"><span style="font-size:0.5em"> Use case #13 : Tooltips</span></h1>
 </div></div>
 <div class="sl-block" style="left: 0px; top: 96px; width: 960px; height: auto;" data-block-type="text" data-block-id="f1cfc195a70aae61587c25a0cf452a5c"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 12;" dir="ui" data-placeholder-text="Text" data-placeholder-tag="p">
@@ -3027,18 +3046,18 @@ sudo docker push tutum.co/${LOGIN_DOCKER}/atm:latest</code></pre></div></div>
 <h1 style="text-align:left"><span style="font-size:0.5em"> Questions ?</span></h1>
 </div></div>
 
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="c80059d9204f87fefa2920acee230071"><div class="sl-block-content" style="z-index: 12;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="c80059d9204f87fefa2920acee230071"><div class="sl-block-content" style="z-index: 12;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="95831c67f0cbbcf4ce046f693e82ac18" style="min-width: 30px; min-height: 30px; width: 360px; height: 360px; left: 300px; top: 170px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="900" data-natural-height="900" data-src="deck-1/2191162-pasted-from-clipboard.png"></div></div></section><section class="has-dark-background" data-background-color="#9e3720"><div class="sl-block" style="left: 0px; top: -1px; width: 720px; height: auto;" data-block-type="text" data-block-id="588c268f418a25a60dfbdb5ef2090368"><div class="sl-block-content" style="color: rgb(255, 255, 255); z-index: 11; background-color: rgb(0, 0, 0);" data-placeholder-text="Title Text" data-placeholder-tag="h1" dir="ui">
 <h1 style="text-align:left"><span style="font-size:37.5px; line-height:44.3182px"> Thank you</span></h1>
 </div></div>
 
-<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="9c6109844753b3ebb69d267ab5f95251"><div class="sl-block-content" style="z-index: 12;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 96" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="96" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
+<div class="sl-block" style="left: 720px; top: -1px; width: 240px; height: 96px;" data-block-type="shape" data-block-id="9c6109844753b3ebb69d267ab5f95251"><div class="sl-block-content" style="z-index: 12;" data-shape-stretch="true" data-shape-fill-color="rgb(230, 145, 56)" data-shape-type="rect"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 240 97" preserveaspectratio="none" width="100%" height="100%" version="1.1"><rect width="240" height="97" class="shape-element" fill="rgb(230, 145, 56)"></rect></svg></div></div>
 <div class="sl-block" data-block-type="image" data-block-id="130fb95ee90aed04fbabfcf43d2f23ca" style="min-width: 30px; min-height: 30px; width: 360px; height: 360px; left: 300px; top: 170px;"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="800" data-natural-height="800" style="" data-src="deck-1/2191167-pasted-from-clipboard.png"></div></div></section>
 			</div>
 		</div>
 
 		<script>
-			var SLConfig = {"deck": {"id":591121,"slug":"deck-1","title":"Continous delivery hands on","description":"Continous Delivery hands-on session","visibility":"all","published_at":"2016-01-22T08:29:08.997Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/secure/1c1053/decks.jpg","view_count":68,"user":{"id":427256,"username":"sedatguclu","name":"Sedat Guclu","description":null,"thumbnail_url":"https://lh5.googleusercontent.com/-tbeAa7Mu07o/AAAAAAAAAAI/AAAAAAAAABw/0FaHV62n7LI/photo.jpg?sz=50","pro":true,"enterprise":false,"enterprise_manager":false,"settings":{"id":266469,"present_controls":true,"present_upsizing":true,"present_notes":true},"registered":true},"background_transition":"slide","transition":"concave","theme_id":null,"theme_font":"merriweather","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":true,"rtl":false,"version":2,"notes":{}}};
+			var SLConfig = {"deck": {"id":591121,"slug":"deck-1","title":"Continous delivery hands on","description":"Continous Delivery hands-on session","visibility":"all","published_at":"2016-03-08T09:29:23.011Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/secure/1c1053/decks.jpg","view_count":82,"user":{"id":427256,"username":"sedatguclu","name":"Sedat Guclu","description":null,"thumbnail_url":"https://lh5.googleusercontent.com/-tbeAa7Mu07o/AAAAAAAAAAI/AAAAAAAAABw/0FaHV62n7LI/photo.jpg?sz=50","pro":true,"enterprise":false,"enterprise_manager":false,"settings":{"id":266469,"present_controls":true,"present_upsizing":true,"present_notes":true},"registered":true},"background_transition":"slide","transition":"concave","theme_id":null,"theme_font":"merriweather","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":true,"rtl":false,"version":2,"notes":{}}};
 			SLConfig.current_user = {
 				name: "Sedat Guclu",
 				username: "sedatguclu",
